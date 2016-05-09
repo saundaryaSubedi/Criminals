@@ -1,0 +1,99 @@
+﻿@model mugshots.dal.criminal_list
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>criminal_list</h4>
+    <hr />
+
+
+
+    <div class="row">
+        <div class="col-md-3">
+            <img src="~/Image/@Model.image_path" style="width:320px;height:240px" class="img-responsive img-thumbnail" />
+        </div>
+        <div class="col-md-6">
+            Name: @Html.DisplayFor(model => model.name) <br />
+            Address:   @Html.DisplayFor(model => model.address) <br />
+
+            Arrest Date: @Html.DisplayFor(model => model.Arrest_Date)  <br />
+            Arrest Time: @Html.DisplayFor(model => model.Arrest_Time) <br />
+            Arrest Agency: @Html.DisplayFor(model => model.Arrest_Agency) <br />
+            Current Age: @Html.DisplayFor(model => model.Current_Age) <br />
+            Charge Description: @Html.DisplayFor(model => model.Charge_Description)
+
+
+        </div>
+    </div>
+
+</div>
+
+<div>
+    
+    <hr />
+   <font color="light green" size="4px">Personal Information:</font> 
+    <table border="1" style="background-color:#aac78d;" class="table">
+       <tr>
+           <th >Name</th>
+           <th >Address</th>
+           <th>Date   Of   Birth</th>
+           <th>Current   Age</th>
+           <th>Eyes  </th>
+           <th>Hair    </th>
+           <th>Build  </th>
+           <th>Height  </th>
+           <th>Weight  </th>
+       </tr>
+        <tr>
+            <td > @Html.DisplayFor(model => model.name)</td>
+            <td> @Html.DisplayFor(model => model.address)</td>
+            <td>@Html.DisplayFor(model => model.DOB)</td>
+            <td>@Html.DisplayFor(model => model.Current_Age)</td>
+            <td>@Html.DisplayFor(model => model.Eyes)</td>
+            <td>@Html.DisplayFor(model => model.Hair)</td>
+            <td>@Html.DisplayFor(model => model.Build)</td>
+            <td>@Html.DisplayFor(model => model.Height)</td>
+            <td>@Html.DisplayFor(model => model.Weight)</td>
+        </tr>
+
+    </table>
+
+    <br /><br />
+    <font color="light green" size="4px">Arrest Information:</font> 
+    <table style="background-color:#aac78d;" border="1" class="table">
+        <tr>
+            <th>Arrest Agency</th>
+            <th> Arrest Date</th>
+            <th>Arrest Time</th>
+            <th> Current Age</th>
+            <th>Charge Description</th>
+            <th>Class</th>
+            <th>Court</th>
+            <th>DISP</th>
+            <th>Charge Type</th>
+            
+        </tr>
+        <tr>
+            <td>@Html.DisplayFor(model => model.Arrest_Agency)</td>
+            <td>@Html.DisplayFor(model => model.Arrest_Date)</td>
+            <td>@Html.DisplayFor(model => model.Arrest_Time)</td>
+            <td>@Html.DisplayFor(model => model.Current_Age)</td>
+            <td>@Html.DisplayFor(model => model.Charge_Description)</td>
+            <td>@Html.DisplayFor(model => model.Class)</td>
+            <td>@Html.DisplayFor(model => model.Court)</td>
+            <td>@Html.DisplayFor(model => model.DISP)</td>
+            <td>@Html.DisplayFor(model => model.Charge_Type)</td>
+
+        </tr>
+
+    </table>
+    
+</div>
+<p>
+   
+    @Html.ActionLink("Back to List", "Index")
+</p>

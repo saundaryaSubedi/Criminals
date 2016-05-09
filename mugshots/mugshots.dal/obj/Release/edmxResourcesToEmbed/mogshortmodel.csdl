@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="mugshotsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="mugshotsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="criminal_list" EntityType="mugshotsModel.criminal_list" />
+  </EntityContainer>
+  <EntityType Name="criminal_list">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="image_path" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Arrest_Agency" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Arrest_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Arrest_Time" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DOB" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Eyes" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Hair" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Build" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Current_Age" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Height" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Weight" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Charge_Description" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Class" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Court" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DISP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Charge_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

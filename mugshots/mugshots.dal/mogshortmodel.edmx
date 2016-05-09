@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="mugshotsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="criminal_list">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="50" />
+          <Property Name="address" Type="varchar" MaxLength="50" />
+          <Property Name="image_path" Type="varchar" MaxLength="50" />
+          <Property Name="Arrest_Agency" Type="varchar" MaxLength="50" />
+          <Property Name="Arrest_Date" Type="varchar" MaxLength="50" />
+          <Property Name="Arrest_Time" Type="varchar" MaxLength="50" />
+          <Property Name="DOB" Type="varchar" MaxLength="50" />
+          <Property Name="Eyes" Type="varchar" MaxLength="50" />
+          <Property Name="Hair" Type="varchar" MaxLength="50" />
+          <Property Name="Build" Type="varchar" MaxLength="50" />
+          <Property Name="Current_Age" Type="varchar" MaxLength="50" />
+          <Property Name="Height" Type="varchar" MaxLength="50" />
+          <Property Name="Weight" Type="varchar" MaxLength="50" />
+          <Property Name="Charge_Description" Type="varchar" MaxLength="50" />
+          <Property Name="Class" Type="varchar" MaxLength="50" />
+          <Property Name="Court" Type="varchar" MaxLength="50" />
+          <Property Name="DISP" Type="varchar" MaxLength="50" />
+          <Property Name="Charge_Type" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="mugshotsModelStoreContainer">
+          <EntitySet Name="criminal_list" EntityType="Self.criminal_list" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="mugshotsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="mugshotsEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="criminal_list" EntityType="mugshotsModel.criminal_list" />
+        </EntityContainer>
+        <EntityType Name="criminal_list">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="image_path" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Arrest_Agency" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Arrest_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Arrest_Time" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DOB" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Eyes" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Hair" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Build" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Current_Age" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Height" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Weight" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Charge_Description" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Class" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Court" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DISP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Charge_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="mugshotsModelStoreContainer" CdmEntityContainer="mugshotsEntities">
+          <EntitySetMapping Name="criminal_list">
+            <EntityTypeMapping TypeName="mugshotsModel.criminal_list">
+              <MappingFragment StoreEntitySet="criminal_list">
+                <ScalarProperty Name="Charge_Type" ColumnName="Charge_Type" />
+                <ScalarProperty Name="DISP" ColumnName="DISP" />
+                <ScalarProperty Name="Court" ColumnName="Court" />
+                <ScalarProperty Name="Class" ColumnName="Class" />
+                <ScalarProperty Name="Charge_Description" ColumnName="Charge_Description" />
+                <ScalarProperty Name="Weight" ColumnName="Weight" />
+                <ScalarProperty Name="Height" ColumnName="Height" />
+                <ScalarProperty Name="Current_Age" ColumnName="Current_Age" />
+                <ScalarProperty Name="Build" ColumnName="Build" />
+                <ScalarProperty Name="Hair" ColumnName="Hair" />
+                <ScalarProperty Name="Eyes" ColumnName="Eyes" />
+                <ScalarProperty Name="DOB" ColumnName="DOB" />
+                <ScalarProperty Name="Arrest_Time" ColumnName="Arrest_Time" />
+                <ScalarProperty Name="Arrest_Date" ColumnName="Arrest_Date" />
+                <ScalarProperty Name="Arrest_Agency" ColumnName="Arrest_Agency" />
+                <ScalarProperty Name="image_path" ColumnName="image_path" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

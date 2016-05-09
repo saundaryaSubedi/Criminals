@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="mugshotsModelStoreContainer" CdmEntityContainer="mugshotsEntities">
+    <EntitySetMapping Name="criminal_list">
+      <EntityTypeMapping TypeName="mugshotsModel.criminal_list">
+        <MappingFragment StoreEntitySet="criminal_list">
+          <ScalarProperty Name="Charge_Type" ColumnName="Charge_Type" />
+          <ScalarProperty Name="DISP" ColumnName="DISP" />
+          <ScalarProperty Name="Court" ColumnName="Court" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="Charge_Description" ColumnName="Charge_Description" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Current_Age" ColumnName="Current_Age" />
+          <ScalarProperty Name="Build" ColumnName="Build" />
+          <ScalarProperty Name="Hair" ColumnName="Hair" />
+          <ScalarProperty Name="Eyes" ColumnName="Eyes" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Arrest_Time" ColumnName="Arrest_Time" />
+          <ScalarProperty Name="Arrest_Date" ColumnName="Arrest_Date" />
+          <ScalarProperty Name="Arrest_Agency" ColumnName="Arrest_Agency" />
+          <ScalarProperty Name="image_path" ColumnName="image_path" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

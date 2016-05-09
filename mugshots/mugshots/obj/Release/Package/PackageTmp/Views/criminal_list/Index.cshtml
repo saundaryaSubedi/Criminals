@@ -1,0 +1,22 @@
+﻿@model IEnumerable<mugshots.dal.criminal_list>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Home</h2>
+
+
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-xs-6 col-sm-4 col-md-3">
+            <strong><a href="@Url.Action("Details","criminal_list", new { id=@item.ID })">@item.name</a></strong>
+            <a href="@Url.Action("Details","criminal_list", new { id=@item.ID })"><img src=" ~/Image/@item.image_path" style="width:250px;height:220px" class="img-responsive img-thumbnail" /></a>
+        </div>
+    }
+</div>
+
+
+

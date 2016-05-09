@@ -1,0 +1,10 @@
+C:\Users\Saundarya\Documents\Visual Studio 2015\Projects\mugshots\mugshots.dal\bin\Release\mugshots.dal.dll.config
+C:\Users\Saundarya\Documents\Visual Studio 2015\Projects\mugshots\mugshots.dal\bin\Release\mugshots.dal.dll
+C:\Users\Saundarya\Documents\Visual Studio 2015\Projects\mugshots\mugshots.dal\bin\Release\mugshots.dal.pdb
+C:\Users\Saundarya\Documents\Visual Studio 2015\Projects\mugshots\mugshots.dal\bin\Release\EntityFramework.dll
+C:\Users\Saundarya\Documents\Visual Studio 2015\Projects\mugshots\mugshots.dal\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Saundarya\Documents\Visual Studio 2015\Projects\mugshots\mugshots.dal\bin\Release\EntityFramework.xml
+C:\Users\Saundarya\Documents\Visual Studio 2015\Projects\mugshots\mugshots.dal\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Saundarya\Documents\Visual Studio 2015\Projects\mugshots\mugshots.dal\obj\Release\mugshots.dal.csprojResolveAssemblyReference.cache
+C:\Users\Saundarya\Documents\Visual Studio 2015\Projects\mugshots\mugshots.dal\obj\Release\mugshots.dal.dll
+C:\Users\Saundarya\Documents\Visual Studio 2015\Projects\mugshots\mugshots.dal\obj\Release\mugshots.dal.pdb
